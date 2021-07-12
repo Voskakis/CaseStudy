@@ -54,10 +54,9 @@ function createCircle(x, y) {
     radiusHolder = getValidRadius(x, y);
     colorHolder = getRandomColor();
 
-    const container = document.createElementNS("http://www.w3.org/2000/svg.html", "svg");
-    container.setAttribute("width", "1000");
-    container.setAttribute("height", "1000");
-    container.setAttribute("Z-index", "999")
+    //const container = document.createElementNS("http://www.w3.org/2000/svg.html", "svg");
+    //container.setAttribute("width", "1000");
+    //container.setAttribute("height", "1000");
 
     const circle = document.createElementNS("http://www.w3.org/2000/svg", "circle");
     circle.setAttribute("cx", app.XC);
@@ -65,9 +64,8 @@ function createCircle(x, y) {
     circle.setAttribute("r", radiusHolder.toString());
     circle.setAttribute("stroke", colorHolder);
     circle.setAttribute("stroke-width", "3");
-    circle.setAttribute("Z-index", "1000");
 
-    container.appendChild(circle);
+    //container.appendChild(circle);
 
-    document.getElementById("app").appendChild(container);
+    document.getElementById("app").appendChild(circle);
 }
